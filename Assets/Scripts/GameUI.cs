@@ -6,14 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameUI : MonoBehaviour
 {
     public GameObject gameLoseUI;
-    //public GameObject gameWinUI;
     public FirstPersonAIO player_mov;
     bool gameIsOver;
 
     void Start()
     {
-        //Guard.OnGuardHasSpottedPlayer += ShowGameLose;
-        //FindObjectOfType<FirstPersonAIO>().OnReachedEnd += ShowGameWin;
     }
 
     void Update()
@@ -26,7 +23,6 @@ public class GameUI : MonoBehaviour
             }
         }
     }
-
 
     public void OnGameOver()
     {
